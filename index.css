@@ -191,7 +191,6 @@ footer{
     height: 12vh;
     overflow-y: hidden;
     align-content: center;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     overflow-x: hidden;
     overflow-x: hidden;
@@ -202,3 +201,47 @@ footer a{
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    header {
+        height: 10vh;
+        text-align: center;
+    }
+    header p {
+        left: 0;
+        font-size: smaller;
+    }
+
+    #intro, #hobby, #goto, #skills, #projects {
+        width: 90%;
+        left: 5%;
+        top: 5vh;
+        position: relative;
+    }
+
+    #intro, #hobby {
+        border-radius: 50px;
+        height: auto;
+        padding: 10px;
+    }
+
+    #image {
+        width: 100%;
+        height: auto;
+        top: 0;
+        text-align: center;
+    }
+    #image img {
+        width: 80%;
+        height: auto;
+    }
+
+    #skills {
+        grid-template-columns: auto auto;
+        padding: 2vw;
+        gap: 10px;
+        top: 10vh;
+    }
+    #projects{
+        grid-template-columns: auto auto;
+    }
+}
