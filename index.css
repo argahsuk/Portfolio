@@ -1,0 +1,204 @@
+*{
+    margin: 0;padding: 0;
+    background-color: rgb(162, 162, 162);
+        
+  
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    /* overflow-y:scroll; */
+}
+
+header{
+    background-color:  rgb(64, 86, 115);
+    height: 12vh;
+    overflow-y: hidden;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    overflow-x: hidden;
+    overflow-x: hidden;
+}
+header p{
+    background-color: rgb(64, 86, 115);
+    position: relative;
+    left: 4vh;
+}
+
+/* intro box */
+#intro{
+    border:3px solid rgb(46, 45, 45);
+    background-color: rgb(189, 125, 146);
+    border-radius: 120px;
+    width: 40vh;
+    height: 27vh;
+    position: relative;
+    top: 12vh;
+    left:60vh;
+    text-align: center;
+    align-content: center;
+}
+#intro:hover{
+    box-shadow: 0px 0px 15px rgb(175, 6, 62);
+}
+
+/*hobby box*/
+#hobby{
+    border:3px solid rgb(46, 45, 45);
+    border-radius: 120px;
+    background-color: rgb(83, 145, 158);
+    color: rgb(7, 0, 0);
+    height: 32vh;
+    width: 85vh;
+    position:relative;
+    left:110vh;
+    text-align: center;
+    align-content: center;
+}
+#hobby:hover{
+    box-shadow: 0px 0px 15px rgb(4, 132, 158);
+}
+
+/* image  */
+#image{
+    object-fit: contain;
+    height: 45vh;
+    width: 48vh;
+    position: relative;
+    top: -42vh;
+    align-content: center;
+}
+#image img{
+    object-fit: contain;
+    height: 35vh;
+    width: 48vh;
+}
+#image img:hover{
+    transform: scale(1.5);
+    transition-duration: .8s;
+}
+
+/* goto box */
+#goto{
+    border: black 3px solid;
+    border-radius: 63px;
+    display: inline-block;
+    height: 18vh;
+    width: 18vw;
+    position: relative;
+    bottom: 52vh;
+    left: 29vw;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(245, 245, 108);
+}
+#goto a,#goto b{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(245, 245, 108);
+    }
+#goto:hover{
+    box-shadow: 0px 0px 15px rgb(247, 247, 4);
+}
+
+/*skiils box  */
+#skills {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto ;  
+    gap: 15px;
+    padding: 4vw 6vh;
+    background-color: #cecccc;
+    position: relative;
+    top: 20vh;
+}
+.skill-item b{
+    background: white;
+}
+.skill-item{
+    background:white;
+    border-radius: 30px;
+    border: .3vh black solid;
+    font-size: larger;
+    height: 25vh;
+    align-content: center;
+    text-align: center;
+}
+.skill-item:hover{
+    scale: 1.1;
+    transition-timing-function: ease-in-out ;
+    transition-duration: .25s;
+}
+#sh{
+    overflow-x: hidden;
+    position: relative;
+    top: 20vh;
+    right: -47vw;
+    text-shadow:rgb(167, 36, 154) 4px 0 10px; 
+}
+
+/* project box */
+#projects{
+    position:relative;
+    top:85vh;
+    display: grid;
+    grid-template-columns: auto auto auto ;  
+    gap: 15px;
+    padding: 4vw 6vh;
+    background-color: #cecccc;
+}
+.project-item{
+    background:white;
+    border-radius: 30px;
+    border: .3vh black solid;
+    font-size: larger;
+    height: 25vh;
+    align-content: center;
+    text-align: center;
+}
+.project-item:hover{
+    scale: 1.1;
+    transition-timing-function: ease-in-out ;
+    transition-duration: .25s;
+}
+.project-item a{
+    text-decoration: none;
+    background: white;
+}
+.project-item b{
+    background: white;
+}
+.project-item p{
+    background: white;
+    display: none;    
+}
+.project-item:hover p{
+    display: block;
+}
+#ph{
+    position: relative;
+    bottom: -85vh;
+    right: -44vw;
+    text-shadow:rgba(240, 41, 41, 0.649) 4px 0 10px; 
+}
+
+
+footer{
+    background-color:  rgb(64, 86, 115);
+    height: 12vh;
+    overflow-y: hidden;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    overflow-x: hidden;
+    overflow-x: hidden;
+    position: relative;
+    top: 100vh;
+}
+footer a{
+    text-decoration: none;
+}
+
