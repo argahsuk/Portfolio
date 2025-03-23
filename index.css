@@ -241,13 +241,13 @@ footer a{
 
     #image {
         width: 100%;
-        height: auto;
+        height: 15vh;
         top: 0;
         text-align: center;
     }
     #image img {
         width: 80%;
-        height: auto;
+        height:15vh;
     }
 
     #skills {
