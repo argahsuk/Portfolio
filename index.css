@@ -28,6 +28,9 @@ header p{
     position: relative;
     left: 4vh;
 }
+header P:hover{
+    text-decoration: dotted underline white;
+}
 
 /* intro box */
 #intro{
@@ -138,6 +141,10 @@ header p{
     text-decoration: none;
     background: white;
 
+}
+.skill-item a:hover{
+    text-decoration: underline ;
+    
 }
 .skill-item:hover{
     scale: 1.1;
