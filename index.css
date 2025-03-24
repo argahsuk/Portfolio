@@ -27,6 +27,7 @@ header p{
     background-color: rgb(64, 86, 115);
     position: relative;
     left: 4vh;
+    width: 36.3vw;
 }
 header P:hover{
     text-decoration: dotted underline white;
@@ -196,6 +197,7 @@ header P:hover{
 }
 .project-item:hover p{
     display: block;
+    
 }
 #ph{
     position: relative;
@@ -231,6 +233,9 @@ footer a{
     header p {
         left: 0;
         font-size: smaller;
+       width: auto;
+            
+        
     }
 
     #intro, #hobby, #goto, #skills, #projects {
