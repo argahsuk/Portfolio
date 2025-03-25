@@ -262,7 +262,7 @@ footer a{
         top: 5vh;
         position: relative;
         border-radius: 50px;
-        height: 30vh;
+        height: 44vh;
         padding: 10px;
 }
     #intro {
@@ -276,6 +276,7 @@ footer a{
         height: 15vh;
         top: 2vh;
         text-align: center;
+        overflow-y: hidden;
     }
     #image img {
         width: 80%;
@@ -290,12 +291,14 @@ footer a{
         gap: 10px;
         top: 10vh;
         width: 90%;
+        left:-4vh;
         position: relative;
     }
     #projects{
         grid-template-columns: auto auto; width: 90%;
         top: 5vh;
         position: relative;
+        left: -4vh;
     }
     footer{
     position: relative;
@@ -304,5 +307,8 @@ footer a{
     #remove{
         display: none;
     }
-    
+    .project-item:hover p{
+        display: none;
+        
+    }    
 }
