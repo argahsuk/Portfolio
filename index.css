@@ -227,6 +227,9 @@ footer a{
 
 /* for mobiles  */
 @media (max-width: 768px) {
+    *{
+        overflow-x: hidden;
+    }
     header {
         height: 10vh;
         text-align: center;
@@ -238,15 +241,31 @@ footer a{
             
         
     }
-
-    #intro, #hobby, #goto, #skills, #projects {
+    #ph{
+        top: 8vh;
+        z-index: 1  ;
+        right: 0;
+    }
+    #sh{
+        top: 8vh;
+        right: 0vh;
+    }
+    #intro, #goto {
         width: 90%;
         left: 5%;
         top: 5vh;
         position: relative;
     }
-
-    #intro, #hobby {
+#hobby{
+    width: 90%;
+        left: 5%;
+        top: 5vh;
+        position: relative;
+        border-radius: 50px;
+        height: 30vh;
+        padding: 10px;
+}
+    #intro {
         border-radius: 50px;
         height: auto;
         padding: 10px;
@@ -255,22 +274,35 @@ footer a{
     #image {
         width: 100%;
         height: 15vh;
-        top: 0;
+        top: 2vh;
         text-align: center;
     }
     #image img {
         width: 80%;
-        height:15vh;
+        height:20vh;
+        top: 8vh ;
     }
-
+#image img:hover{
+    scale: .6;
+}
     #skills {
         grid-template-columns: auto auto;
-        padding: 2vw;
         gap: 10px;
         top: 10vh;
+        width: 90%;
+        position: relative;
     }
     #projects{
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto; width: 90%;
+        top: 5vh;
+        position: relative;
+    }
+    footer{
+    position: relative;
+    top: 3vh;
+    }
+    #remove{
+        display: none;
     }
     
 }
