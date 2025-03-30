@@ -136,6 +136,7 @@ header P:hover{
     height: 25vh;
     align-content: center;
     text-align: center;
+    box-shadow: 0 0 5px rgb(167, 36, 154);
 }
 .skill-item a{
     color: red;
@@ -166,10 +167,11 @@ header P:hover{
     position:relative;
     top:85vh;
     display: grid;
-    grid-template-columns: auto auto auto ;  
+    grid-template-columns: auto auto auto auto auto;  
     gap: 15px;
     padding: 4vw 6vh;
     background-color: #cecccc;
+  
 }
 .project-item{
     background:white;
@@ -179,6 +181,7 @@ header P:hover{
     height: 25vh;
     align-content: center;
     text-align: center;
+    box-shadow: 0 0 5px rgb(250, 4, 4);
 }
 .project-item:hover{
     scale: 1.1;
@@ -304,10 +307,7 @@ footer a{
     position: relative;
     top: 3vh;
     }
-    #remove{
-        display: none;
-    }
-    .project-item:hover p{
+  #remove,.project-item:hover p{
         display: none;
         
     }    
