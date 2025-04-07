@@ -9,7 +9,7 @@ containers.forEach(container => {
       box.forEach(p => {
         p.style.display = 'block';
       });
-    }, 1122);
+    }, 600);
   });
 
   container.addEventListener('mouseleave', () => {
