@@ -1,127 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    padding: 0;margin: 0;
+* {
+    padding: 0;
+    margin: 0;
     scroll-behavior: smooth;
-   font-family: poppins;
+    font-family: poppins;
 }
 
 /* Header*/
-header{
+header {
     background-color: rgb(53, 34, 57);
     display: flex;
     flex-direction: row;
     height: 10vh;
 }
-header p{
+
+header p {
     display: inline;
     color: rgb(133, 131, 131);
     font-weight: bold;
-    font-size:larger;
+    font-size: larger;
     padding: 2vh;
     position: relative;
     left: 18vh;
     top: 4vh;
 }
-#headR{
+
+#headR {
     position: relative;
-    left:58%;
+    left: 58%;
     align-content: center;
-    
+
 }
-#headR a{
+
+#headR a {
     color: rgb(133, 131, 131);
     font-weight: bold;
-    font-size:larger;
+    font-size: larger;
     padding: 6vh;
     text-decoration: none;
 }
-#headR a:hover{
+
+#headR a:hover {
     color: rgb(224, 229, 229);
 }
-#headL p:hover{
+
+#headL p:hover {
     color: rgb(224, 229, 229);
 }
+
 /* -------------------------------------------------------------------------- */
 /* intro page */
-#intro{
+#intro {
     height: 90vh;
     background-image: url(1.jpg);
     background-size: cover;
     background-position: center;
-    background-repeat:repeat-x;
-     overflow-x: hidden;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
 }
-#hello{
+
+#hello {
     font-size: 75px;
     color: rgb(39, 37, 37);
     position: relative;
     top: -8vh;
-    animation: abc 1.5s ease-in forwards ;
+    animation: abc 1.5s ease-in forwards;
     font-weight: 900;
 }
+
 @keyframes abc {
     0% {
         transform: translateX(0);
         opacity: 0;
     }
-    15%{
+
+    15% {
         opacity: 0;
     }
+
     100% {
-        transform: translateX(32vw) rotate(-12deg) translateY(-0vh); 
+        transform: translateX(32vw) rotate(-12deg) translateY(-0vh);
         opacity: 1;
-}
+    }
 }
 
 
-#introim{
+#introim {
     font-size: 65px;
     color: rgb(34, 33, 33);
     position: relative;
     top: -15vh;
-    animation:gef 1.5s ease-in forwards ;
+    animation: gef 1.5s ease-in forwards;
     font-weight: 800;
 }
+
 @keyframes gef {
     0% {
         transform: translateX(0);
         opacity: 0;
     }
-    15%{
+
+    15% {
         opacity: 0;
     }
+
     100% {
-        transform: translateX(29vw) rotate(-15deg) translateY(-12vh); 
+        transform: translateX(29vw) rotate(-15deg) translateY(-12vh);
         opacity: 1;
     }
 }
-#introinfo{ 
+
+#introinfo {
     font-size: 25px;
     color: rgb(34, 33, 33);
     position: relative;
     top: 10vh;
-    animation:bcd 1.5s ease-in forwards ;
-    font-weight:1000;
+    animation: bcd 1.5s ease-in forwards;
+    font-weight: 1000;
 }
+
 @keyframes bcd {
     0% {
         transform: translateX(0);
         opacity: 0;
     }
-    3%{
+
+    3% {
         opacity: 0;
     }
+
     100% {
-        transform: translateX(35vw) rotate(-15deg) translateY(-10vh); 
+        transform: translateX(35vw) rotate(-15deg) translateY(-10vh);
         opacity: 1;
+    }
 }
-}
+
 /* -------------------------------------------------------------------------- */
 /* about page */
 
 /* main container */
-#about{
+#about {
     display: flex;
 
     flex-direction: column;
@@ -133,53 +152,63 @@ header p{
     background-size: contain;
     background-position: center;
 }
+
 /* hobby part */
-#hobby{
-    width:50%;
+#hobby {
+    width: 50%;
     color: white;
     background-color: #E6E6FA;
-    color:black;
+    color: black;
     text-align: center;
     align-content: center;
     border-radius: 10vh;
     padding: 1vh 1.5vh;
 }
+
 /* educcation part */
-#education{
+#education {
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto;
     gap: 10vh;
     padding: 8vh;
 }
-#education a{
-    text-decoration:none;
+
+.eduanchor{
+    text-decoration: none;
+    color: inherit;
 }
-#education a:hover{
-    text-decoration:underline;
+
+.egi:hover .eduanchor{
+    text-decoration: underline;
 }
-.egi{
+
+.egi {
     border: .1vh black solid;
     padding: 3.5vh;
     opacity: 0;
     text-align: center;
-    background-color:#E6E6FA
+    background-color: #E6E6FA
 }
-#about:hover #ei1{
+
+#about:hover #ei1 {
     opacity: 1;
 }
-#about:hover #ei2{
+
+#about:hover #ei2 {
     transform: translateX(-28vw);
     opacity: 0;
     animation: e2 1s ease-in forwards;
     color: red;
 }
-#about:hover #ei3{
+
+#about:hover #ei3 {
     transform: translateY(-22.3vh);
     opacity: 0;
     animation: e3 2s ease-in forwards;
-    color :blue;
+    color: blue;
 }
-#about:hover #ei4{
+
+#about:hover #ei4 {
     transform: translateY(-22.3vh);
     opacity: 0;
     animation: e4 3s ease-in forwards;
@@ -187,35 +216,40 @@ header p{
 }
 
 @keyframes e2 {
-     100%{
+    100% {
         opacity: 1;
         transform: translateX(0);
-     }
-     50%{
+    }
+
+    50% {
         opacity: .2;
-     }
-     
-}
-@keyframes e3 {
-     100%{
-        opacity: 1;
-        transform: translateY(0);
-     }
-     60%{
-        opacity: 0;
-     }
-}
-@keyframes e4 {
-     100%{
-        opacity: 1;
-        transform: translateY(0);
-     }
-     70%{
-        opacity: 0;
-     }
+    }
+
 }
 
-#abp{
+@keyframes e3 {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    60% {
+        opacity: 0;
+    }
+}
+
+@keyframes e4 {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    70% {
+        opacity: 0;
+    }
+}
+
+#abp {
     padding: 1.5vh 8vw;
     text-align: center;
     align-content: center;
@@ -225,37 +259,50 @@ header p{
     font-size: larger;
     font-weight: 700;
 }
-#abp:hover{
+
+#abp:hover {
     text-decoration: underline;
 }
+
 /* -------------------------------------------------------------------------- */
 /* project box */
 
-#ph{
+#ph {
     text-align: center;
     padding: 3vh;
-    background: linear-gradient(to left ,rgb(67, 51, 82) , rgb(65, 2, 64));
-    color: white ;
+    background: linear-gradient(to left, rgb(67, 51, 82), rgb(65, 2, 64));
+    color: white;
     height: 10vh;
-     animation: gradientAnimation 10s ease infinite;
-     background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    background-size: 400% 400%;
 }
+
 /* moving gradient */
 @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
-#projects{
+
+#projects {
     display: grid;
-    grid-template-columns: auto auto auto auto ;  
+    grid-template-columns: auto auto auto auto;
     gap: 15px;
     padding: 4vw 6vh;
-    background-color:#1d1021;
+    background-color: #1d1021;
     height: 67.7vh;
-  
+
 }
-.project-item{
+
+.project-item {
     border-radius: 30px;
     border: .3vh black solid;
     font-size: larger;
@@ -266,88 +313,109 @@ header p{
     background-image: url(4.jpg);
     background-size: cover;
     background-position: center;
-    border :none;
-    color:white;
+    border: none;
+    color: white;
     animation: pia 1s ease-in-out infinite;
 }
-.project-item:hover{
+
+.project-item:hover {
     box-shadow: 0 0 5px rgb(251, 249, 249);
     animation: none;
     scale: 1.1;
-    transition-timing-function: ease-in-out ;
+    transition-timing-function: ease-in-out;
     transition-duration: .25s;
     font-weight: bolder;
 }
-.project-item:hover p{
-    /* display: block; */
+
+.project-item:hover p {
+    display: none;
 }
 
-.project-item a{
+.project-item a {
     text-decoration: none;
     background: transparent;
     color: rgb(146, 52, 255);
 }
-.project-item:hover a{
-text-decoration: underline;
+
+.project-item:hover a {
+    text-decoration: underline;
 }
 
-.project-item b{
+.project-item b {
     background: transparent;
     color: white;
 }
-.project-item p{
-     background: transparent; 
+
+.project-item p {
+    background: transparent;
     display: none;
-      /*if turning off display none prop then do height auto in project item  */
+    /*if turning off display none prop then do height auto in project item  */
 }
 
 /* moving project item */
 @keyframes pia {
-    0%{
-        transform: rotateZ(.5deg) ;
+    0% {
+        transform: rotateZ(.5deg);
     }
-    25%{
-        transform: rotateZ(-.5deg) ;
+
+    25% {
+        transform: rotateZ(-.5deg);
     }
-    50%{
-        transform: rotateZ(.5deg) ;
+
+    50% {
+        transform: rotateZ(.5deg);
     }
-    75%{
-        transform: rotateZ(-.5deg) ;
+
+    75% {
+        transform: rotateZ(-.5deg);
     }
-    100%{
-        transform: rotateZ(.5deg) ;
+
+    100% {
+        transform: rotateZ(.5deg);
     }
 }
+
 /* -------------------------------------------------------------------------- */
 /* Skills part */
 #skills {
     display: grid;
-    grid-template-columns: auto auto auto ;  
+    grid-template-columns: auto auto auto;
     gap: 15px;
     padding: 4vw 8vw;
     height: 55.8vh;
-    background: linear-gradient(to left ,#331d44, rgb(40, 1, 72));
+    background: linear-gradient(to left, #331d44, rgb(40, 1, 72));
     animation: gradientAnimation3 5s ease infinite;
     background-size: 400% 400%;
 }
+
 /* moving gradient */
 @keyframes gradientAnimation3 {
-   0% { background-position: 0% 50%;}
-   50% { background-position: 100% 50%;
-        height: 60.8vh; }
-   100% { background-position: 0% 50%; 
-    height: 55.8vh;}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+        height: 60.8vh;
+    }
+
+    100% {
+        background-position: 0% 50%;
+        height: 55.8vh;
+    }
 }
-.skill-item:hover{
+
+.skill-item:hover {
     box-shadow: 0 0 5px rgb(251, 249, 249);
     animation: none;
 }
-.skill-item b{
+
+.skill-item b {
     background: transparent;
     color: white;
 }
-.skill-item{
+
+.skill-item {
     border-radius: 30px;
     font-size: larger;
     height: 25vh;
@@ -361,124 +429,153 @@ text-decoration: underline;
     justify-content: space-evenly;
     opacity: 1;
 }
+
 /* skilss item animation start */
-#skills:hover #skill-1{
+#skills:hover #skill-1 {
     opacity: 1;
 }
-#skills:hover #skill-2{
+
+#skills:hover #skill-2 {
     opacity: 0;
     animation: s2 .9s ease-in forwards;
     transform: translateX(-28vw);
 }
-#skills:hover #skill-3{
+
+#skills:hover #skill-3 {
     opacity: 0;
     animation: s3 1.8s ease-in forwards;
     transform: translateX(-28vw);
 
 }
-#skills:hover #skill-4{
+
+#skills:hover #skill-4 {
     opacity: 0;
     animation: s4 2.7s ease-in forwards;
     transform: translateY(-31vh);
 }
-#skills:hover #skill-5{
+
+#skills:hover #skill-5 {
     opacity: 0;
     animation: s5 3.6s ease-in forwards;
     transform: translateX(-28vw);
 }
-#skills:hover #skill-6{
+
+#skills:hover #skill-6 {
     opacity: 0;
     animation: s6 4.5s ease-in forwards;
     transform: translateX(-28vw);
 }
+
 @keyframes s2 {
-    100%{
-       opacity: 1;
-       transform: translateX(0);
+    100% {
+        opacity: 1;
+        transform: translateX(0);
     }
-    50%{
-       opacity: .2;
+
+    50% {
+        opacity: .2;
     }
-    
+
 }
+
 @keyframes s3 {
-    100%{
-       opacity: 1;
-       transform: translateY(0);
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
-    60%{
-       opacity: 0;
+
+    60% {
+        opacity: 0;
     }
 }
+
 @keyframes s4 {
-    100%{
-       opacity: 1;
-       transform: translateY(0);
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
-    70%{
-       opacity: 0;
+
+    70% {
+        opacity: 0;
     }
 }
+
 @keyframes s5 {
-    100%{
-       opacity: 1;
-       transform: translateY(0);
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
-    70%{
-       opacity: 0;
+
+    70% {
+        opacity: 0;
     }
 }
+
 @keyframes s6 {
-    100%{
-       opacity: 1;
-       transform: translateY(0);
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
-    70%{
-       opacity: 0;
+
+    70% {
+        opacity: 0;
     }
 }
+
 /* skill item animations end */
-.skill-item a{
+.skill-item a {
     color: red;
     text-decoration: none;
     background: white;
 }
-.skill-item a:hover{
-    text-decoration: underline ;
-    
+
+.skill-item a:hover {
+    text-decoration: underline;
+
 }
-.skill-item:hover{
+
+.skill-item:hover {
     scale: 1.1;
-    transition-timing-function: ease-in-out ;
+    transition-timing-function: ease-in-out;
     transition-duration: .25s;
     font-weight: bolder;
 }
-#sh{
+
+#sh {
     text-align: center;
     align-content: center;
     padding: 3vh;
-    background: linear-gradient(to left ,rgb(67, 51, 82) , rgb(29, 10, 29));
+    background: linear-gradient(to left, rgb(67, 51, 82), rgb(29, 10, 29));
     color: beige;
-        height: 10vh;
-     animation: gradientAnimation2 6s ease infinite;
-     background-size: 400% 400%;
+    height: 10vh;
+    animation: gradientAnimation2 6s ease infinite;
+    background-size: 400% 400%;
 }
+
 /* moving gradient */
 @keyframes gradientAnimation2 {
-    0% { background-position: 0% 50%;
-     }
-    50% { background-position: 100% 50%;
-        height: 5vh; 
+    0% {
+        background-position: 0% 50%;
     }
-    100% { background-position: 0% 50%;
+
+    50% {
+        background-position: 100% 50%;
+        height: 5vh;
+    }
+
+    100% {
+        background-position: 0% 50%;
         height: 10vh;
-     }
+    }
 }
+
 /*
 -------------------------------------------------------------------------- */
+
 /* contacts part */
-footer{
-    background-color:  rgb(53, 34, 57);
+
+footer {
+    background-color: rgb(53, 34, 57);
     height: 12vh;
     overflow-y: hidden;
     align-content: center;
@@ -488,11 +585,187 @@ footer{
     color: white;
     font-size: larger;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     padding: 0 2vh;
 }
-footer img{
+
+footer img {
     width: 1.5vw;
     height: 3vh;
 }
+
+/* responsive */
+@media (max-width: 1200px) {
+    #intro {
+        height: 80vh;
+    }
+    #hello {
+        font-size: 60px;
+    }
+    #introim {
+        font-size: 50px;
+    }
+    #introinfo {
+        font-size: 20px;
+    }
+    #headR {
+        left: 50%;
+    }
+    #headR a {
+        padding: 4vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    #intro {
+        height: 70vh;
+    }
+    #hello {
+        font-size: 50px;
+    }
+    #introim {
+        font-size: 40px;
+    }
+    #introinfo {
+        font-size: 18px;
+    }
+    #about {
+        height: auto;
+        padding: 5vh 0;
+    }
+    #education {
+        grid-template-columns: auto;
+        gap: 5vh;
+        padding: 4vh;
+    }
+    #hobby {
+        width: 80%;
+        margin: 2vh 0;
+    }
+    #headR {
+        left: 40%;
+    }
+    #headR a {
+        padding: 3vh;
+        font-size: large;
+    }
+}
+
+@media (max-width:800px) {
+    #intro {
+        height: 60vh;
+    }
+    #hello {
+        font-size: 40px;
+    }
+    #introim {
+        font-size: 30px;
+    }
+    #introinfo {
+        font-size: 16px;
+    }
+    #projects {
+        grid-template-columns: auto auto;
+        height: auto;
+    }
+    .project-item {
+        width: 40vw;
+        height: 25vh;
+    }
+    #skills {
+        grid-template-columns: auto auto;
+        height: auto;
+    }
+    .skill-item {
+        width: 35vw;
+        height: 20vh;
+    }
+    header p {
+        left: 10vh;
+    }
+    #headR {
+        left: 30%;
+    }
+    #headR a {
+        padding: 2vh;
+        font-size: medium;
+    }
+}
+@media (max-width: 600px) {
+    #intro {
+        height: 50vh;
+    }
+    #hello {
+        font-size: 30px;
+        position: relative;
+        top: -5vh;
+        right: 15vw;
+    }
+    #introim {
+        font-size: 25px;
+        top:-2vh;
+        right:2vw;
+        width: 60vw;
+
+    }
+    #introinfo {
+        font-weight: 700;
+        top: 5vh;
+        position: relative;
+        top:15vh;
+        right: 7vw;
+    }
+    #projects {
+        grid-template-columns: auto auto;
+        padding: 4vw 10vw;
+    }
+    .project-item {
+        width: auto
+    }
+    #skills {
+        grid-template-columns: auto;
+        animation: none;
+    }
+    #sh{
+        animation: none;
+    }
+    .skill-item {
+        width: 70vw;
+        margin: auto;
+
+    }
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    header p {
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: block;
+    }
+    #headR {
+        left: 0;
+        text-align: center;
+        padding-bottom: 2vh;
+    }
+    #headR a {
+        padding: 1vh 2vh;
+    }
+    footer img {
+        width: 4vw;
+        height: 3vh;
+    }
+    #education {
+        padding: 2vh;
+    }
+    .egi {
+        padding: 2vh;
+    }
+    #hobby{
+        width: auto;
+    }
+}
+
