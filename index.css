@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;margin: 0;
+    scroll-behavior: smooth;
+   font-family: poppins;
+}
+
+/* Header*/
+header{
+    background-color: rgb(53, 34, 57);
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+}
+header p{
+    display: inline;
+    color: rgb(133, 131, 131);
+    font-weight: bold;
+    font-size:larger;
+    padding: 2vh;
+    position: relative;
+    left: 18vh;
+    top: 4vh;
+}
+#headR{
+    position: relative;
+    left:58%;
+    align-content: center;
+    
+}
+#headR a{
+    color: rgb(133, 131, 131);
+    font-weight: bold;
+    font-size:larger;
+    padding: 6vh;
+    text-decoration: none;
+}
+#headR a:hover{
+    color: rgb(224, 229, 229);
+}
+#headL p:hover{
+    color: rgb(224, 229, 229);
+}
+/* -------------------------------------------------------------------------- */
+/* intro page */
+#intro{
+    height: 90vh;
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:repeat-x;
+     overflow-x: hidden;
+}
+#hello{
+    font-size: 75px;
+    color: rgb(39, 37, 37);
+    position: relative;
+    top: -8vh;
+    animation: abc 1.5s ease-in forwards ;
+    font-weight: 900;
+}
+@keyframes abc {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    15%{
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(32vw) rotate(-12deg) translateY(-0vh); 
+        opacity: 1;
+}
+}
+
+
+#introim{
+    font-size: 65px;
+    color: rgb(34, 33, 33);
+    position: relative;
+    top: -15vh;
+    animation:gef 1.5s ease-in forwards ;
+    font-weight: 800;
+}
+@keyframes gef {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    15%{
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(29vw) rotate(-15deg) translateY(-12vh); 
+        opacity: 1;
+    }
+}
+#introinfo{ 
+    font-size: 25px;
+    color: rgb(34, 33, 33);
+    position: relative;
+    top: 10vh;
+    animation:bcd 1.5s ease-in forwards ;
+    font-weight:1000;
+}
+@keyframes bcd {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    3%{
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(35vw) rotate(-15deg) translateY(-10vh); 
+        opacity: 1;
+}
+}
+/* -------------------------------------------------------------------------- */
+/* about page */
+
+/* main container */
+#about{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(3.jpg);
+    background-size: contain;
+    background-position: center;
+}
+/* hobby part */
+#hobby{
+    width:50%;
+    color: white;
+    background-color: #E6E6FA;
+    color:black;
+    text-align: center;
+    align-content: center;
+    border-radius: 10vh;
+    padding: 1vh 1.5vh;
+}
+/* educcation part */
+#education{
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 10vh;
+    padding: 8vh;
+}
+#education a{
+    text-decoration:none;
+}
+#education a:hover{
+    text-decoration:underline;
+}
+.egi{
+    border: .1vh black solid;
+    padding: 3.5vh;
+    opacity: 0;
+    text-align: center;
+    background-color:#E6E6FA
+}
+#about:hover #ei1{
+    opacity: 1;
+}
+#about:hover #ei2{
+    transform: translateX(-28vw);
+    opacity: 0;
+    animation: e2 1s ease-in forwards;
+    color: red;
+}
+#about:hover #ei3{
+    transform: translateY(-22.3vh);
+    opacity: 0;
+    animation: e3 2s ease-in forwards;
+    color :blue;
+}
+#about:hover #ei4{
+    transform: translateY(-22.3vh);
+    opacity: 0;
+    animation: e4 3s ease-in forwards;
+    color: darkgreen;
+}
+
+@keyframes e2 {
+     100%{
+        opacity: 1;
+        transform: translateX(0);
+     }
+     50%{
+        opacity: .2;
+     }
+     
+}
+@keyframes e3 {
+     100%{
+        opacity: 1;
+        transform: translateY(0);
+     }
+     60%{
+        opacity: 0;
+     }
+}
+@keyframes e4 {
+     100%{
+        opacity: 1;
+        transform: translateY(0);
+     }
+     70%{
+        opacity: 0;
+     }
+}
+
+#abp{
+    padding: 1.5vh 8vw;
+    text-align: center;
+    align-content: center;
+    border-radius: 2vh;
+    border: none;
+    background-color: rgb(39, 133, 255);
+    font-size: larger;
+    font-weight: 700;
+}
+#abp:hover{
+    text-decoration: underline;
+}
+/* -------------------------------------------------------------------------- */
+/* project box */
+
+#ph{
+    text-align: center;
+    padding: 3vh;
+    background: linear-gradient(to left ,rgb(67, 51, 82) , rgb(65, 2, 64));
+    color: white ;
+    height: 10vh;
+     animation: gradientAnimation 10s ease infinite;
+     background-size: 400% 400%;
+}
+/* moving gradient */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+#projects{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;  
+    gap: 15px;
+    padding: 4vw 6vh;
+    background-color:#1d1021;
+    height: 67.7vh;
+  
+}
+.project-item{
+    border-radius: 30px;
+    border: .3vh black solid;
+    font-size: larger;
+    height: auto;
+    width: 17vw;
+    align-content: center;
+    text-align: center;
+    background-image: url(4.jpg);
+    background-size: cover;
+    background-position: center;
+    border :none;
+    color:white;
+    animation: pia 1s ease-in-out infinite;
+}
+.project-item:hover{
+    box-shadow: 0 0 5px rgb(251, 249, 249);
+    animation: none;
+    scale: 1.1;
+    transition-timing-function: ease-in-out ;
+    transition-duration: .25s;
+    font-weight: bolder;
+}
+.project-item:hover p{
+    /* display: block; */
+}
+
+.project-item a{
+    text-decoration: none;
+    background: transparent;
+    color: rgb(146, 52, 255);
+}
+.project-item:hover a{
+text-decoration: underline;
+}
+
+.project-item b{
+    background: transparent;
+    color: white;
+}
+.project-item p{
+     background: transparent; 
+    display: none;
+      /*if turning off display none prop then do height auto in project item  */
+}
+
+/* moving project item */
+@keyframes pia {
+    0%{
+        transform: rotateZ(.5deg) ;
+    }
+    25%{
+        transform: rotateZ(-.5deg) ;
+    }
+    50%{
+        transform: rotateZ(.5deg) ;
+    }
+    75%{
+        transform: rotateZ(-.5deg) ;
+    }
+    100%{
+        transform: rotateZ(.5deg) ;
+    }
+}
+/* -------------------------------------------------------------------------- */
+/* Skills part */
+#skills {
+    display: grid;
+    grid-template-columns: auto auto auto ;  
+    gap: 15px;
+    padding: 4vw 8vw;
+    height: 55.8vh;
+    background: linear-gradient(to left ,#331d44, rgb(40, 1, 72));
+    animation: gradientAnimation3 5s ease infinite;
+    background-size: 400% 400%;
+}
+/* moving gradient */
+@keyframes gradientAnimation3 {
+   0% { background-position: 0% 50%;}
+   50% { background-position: 100% 50%;
+        height: 60.8vh; }
+   100% { background-position: 0% 50%; 
+    height: 55.8vh;}
+}
+.skill-item:hover{
+    box-shadow: 0 0 5px rgb(251, 249, 249);
+    animation: none;
+}
+.skill-item b{
+    background: transparent;
+    color: white;
+}
+.skill-item{
+    border-radius: 30px;
+    font-size: larger;
+    height: 25vh;
+    width: 25vw;
+    align-content: center;
+    text-align: center;
+    background-image: url(012.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    justify-content: space-evenly;
+    opacity: 1;
+}
+/* skilss item animation start */
+#skills:hover #skill-1{
+    opacity: 1;
+}
+#skills:hover #skill-2{
+    opacity: 0;
+    animation: s2 .9s ease-in forwards;
+    transform: translateX(-28vw);
+}
+#skills:hover #skill-3{
+    opacity: 0;
+    animation: s3 1.8s ease-in forwards;
+    transform: translateX(-28vw);
+
+}
+#skills:hover #skill-4{
+    opacity: 0;
+    animation: s4 2.7s ease-in forwards;
+    transform: translateY(-31vh);
+}
+#skills:hover #skill-5{
+    opacity: 0;
+    animation: s5 3.6s ease-in forwards;
+    transform: translateX(-28vw);
+}
+#skills:hover #skill-6{
+    opacity: 0;
+    animation: s6 4.5s ease-in forwards;
+    transform: translateX(-28vw);
+}
+@keyframes s2 {
+    100%{
+       opacity: 1;
+       transform: translateX(0);
+    }
+    50%{
+       opacity: .2;
+    }
+    
+}
+@keyframes s3 {
+    100%{
+       opacity: 1;
+       transform: translateY(0);
+    }
+    60%{
+       opacity: 0;
+    }
+}
+@keyframes s4 {
+    100%{
+       opacity: 1;
+       transform: translateY(0);
+    }
+    70%{
+       opacity: 0;
+    }
+}
+@keyframes s5 {
+    100%{
+       opacity: 1;
+       transform: translateY(0);
+    }
+    70%{
+       opacity: 0;
+    }
+}
+@keyframes s6 {
+    100%{
+       opacity: 1;
+       transform: translateY(0);
+    }
+    70%{
+       opacity: 0;
+    }
+}
+/* skill item animations end */
+.skill-item a{
+    color: red;
+    text-decoration: none;
+    background: white;
+}
+.skill-item a:hover{
+    text-decoration: underline ;
+    
+}
+.skill-item:hover{
+    scale: 1.1;
+    transition-timing-function: ease-in-out ;
+    transition-duration: .25s;
+    font-weight: bolder;
+}
+#sh{
+    text-align: center;
+    align-content: center;
+    padding: 3vh;
+    background: linear-gradient(to left ,rgb(67, 51, 82) , rgb(29, 10, 29));
+    color: beige;
+        height: 10vh;
+     animation: gradientAnimation2 6s ease infinite;
+     background-size: 400% 400%;
+}
+/* moving gradient */
+@keyframes gradientAnimation2 {
+    0% { background-position: 0% 50%;
+     }
+    50% { background-position: 100% 50%;
+        height: 5vh; 
+    }
+    100% { background-position: 0% 50%;
+        height: 10vh;
+     }
+}
+/*
+-------------------------------------------------------------------------- */
+/* contacts part */
+footer{
+    background-color:  rgb(53, 34, 57);
+    height: 12vh;
+    overflow-y: hidden;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: larger;
+}
+footer a{
+    text-decoration: none;
+    padding: 0 2vh;
+}
+footer img{
+    width: 1.5vw;
+    height: 3vh;
+}
