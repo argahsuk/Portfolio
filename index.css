@@ -705,7 +705,7 @@ footer img {
     }
     #introim {
         font-size: 25px;
-        top:-2vh;
+        top:2vh;
         right:2vw;
         width: 60vw;
 
@@ -715,7 +715,7 @@ footer img {
         top: 5vh;
         position: relative;
         top:15vh;
-        right: 7vw;
+        right: 12vw;
     }
     #projects {
         grid-template-columns: auto auto;
@@ -768,4 +768,3 @@ footer img {
         width: auto;
     }
 }
-
