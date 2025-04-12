@@ -768,3 +768,78 @@ footer img {
         width: auto;
     }
 }
+
+@media (max-width: 400px) {
+    #intro {
+        height: 45vh;
+    }
+    #hello {
+        font-size: 24px;
+        position: relative;
+        top: 5vh;
+        right: 10vw;
+    }
+    #introim {
+        font-size: 10px;
+        top: 9vh;
+        right: 2vw;
+        width: 70vw;
+    }
+    #introinfo {
+        font-weight: 700;
+        position: relative;
+        top: 17vh;
+        right: 8vw;
+        font-size: 10px;
+    }
+    #projects {
+        grid-template-columns: auto;
+        padding: 4vw 8vw;
+    }
+    .project-item {
+        width: 90%;
+        margin: auto;
+    }
+    #skills {
+        grid-template-columns: auto;
+        animation: none;
+    }
+    #sh {
+        animation: none;
+    }
+    .skill-item {
+        width: 80vw;
+        margin: auto;
+    }
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    header p {
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: block;
+    }
+    #headR {
+        left: 0;
+        text-align: center;
+        padding-bottom: 2vh;
+    }
+    #headR a {
+        padding: 1vh 2vh;
+    }
+    footer img {
+        width: 6vw;
+        height: 4vh;
+    }
+    #education {
+        padding: 2vh;
+    }
+    .egi {
+        padding: 2vh;
+    }
+    #hobby {
+        width: auto;
+    }
+}
