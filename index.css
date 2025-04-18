@@ -15,7 +15,12 @@ header {
     height: 10vh;
 }
 
-header p {
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header p{
     display: inline;
     color: rgb(133, 131, 131);
     font-weight: bold;
@@ -596,6 +601,18 @@ footer img {
     height: 3vh;
 }
 
+/* the navigate part */
+.navigate a{
+    font-size:medium ;
+    text-decoration: none;
+    color:white;
+}               
+
+
+
+
+
+
 /* responsive */
 @media (max-width: 1200px) {
     #intro {
@@ -793,12 +810,13 @@ footer img {
         font-size: 10px;
     }
     #projects {
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
         padding: 4vw 8vw;
     }
     .project-item {
         width: 90%;
         margin: auto;
+        height: 15vh;
     }
     #skills {
         grid-template-columns: auto;
