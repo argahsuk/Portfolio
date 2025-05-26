@@ -580,17 +580,19 @@ header p{
 /* contacts part */
 
 footer {
-    background-color: rgb(53, 34, 57);
+     background-color: rgb(53, 34, 57);
     height: 12vh;
     overflow-y: hidden;
     align-content: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     text-align: center;
-    color: white;
-    font-size: larger;
+    color: rgb(241, 238, 238);
+    font-size: 22px;
 }
-
+footer:hover b{
+    color: rgb(245, 241, 241);
+}
 footer a {
     text-decoration: none;
     padding: 0 2vh;
@@ -599,6 +601,11 @@ footer a {
 footer img {
     width: 1.5vw;
     height: 3vh;
+    transition: .5s ease;
+}
+footer img:hover{
+    filter: hue-rotate(200deg) saturate(150%) brightness(90%);
+    scale: 1.4;
 }
 
 /* the navigate part */
@@ -607,6 +614,9 @@ footer img {
     text-decoration: none;
     color:white;
 }               
+.navigate a:hover{
+    text-decoration: underline;
+}
 
 
 
