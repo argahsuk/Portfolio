@@ -384,13 +384,18 @@ header p{
 /* Skills part */
 #skills {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     gap: 15px;
     padding: 4vw 8vw;
     height: 55.8vh;
     background: linear-gradient(to left, #331d44, rgb(40, 1, 72));
-    animation: gradientAnimation3 5s ease infinite;
+    /* animation: gradientAnimation3 5s ease infinite; */
+    /* stops skill bg from moving */
     background-size: 400% 400%;
+    background-image: url(012.jpg);
+    background-position: center;
+
+    background-size: cover;
 }
 
 /* moving gradient */
@@ -401,18 +406,19 @@ header p{
 
     50% {
         background-position: 100% 50%;
-        height: 60.8vh;
+        /* height: 60.8vh; */
     }
 
     100% {
         background-position: 0% 50%;
-        height: 55.8vh;
+        /* height: 55.8vh; */
     }
 }
 
 .skill-item:hover {
-    box-shadow: 0 0 5px rgb(251, 249, 249);
+    /* box-shadow: 0 0 5px rgb(251, 249, 249); */
     animation: none;
+    /* scale: 1.1; */
 }
 
 .skill-item b {
@@ -423,20 +429,28 @@ header p{
 .skill-item {
     border-radius: 30px;
     font-size: larger;
-    height: 25vh;
-    width: 25vw;
+    height:25vh;
+    width: 10vw;
     align-content: center;
-    text-align: center;
-    background-image: url(012.jpg);
-    background-size: cover;
-    background-position: center;
+    text-align: center;   
     color: white;
     justify-content: space-evenly;
     opacity: 1;
 }
+.skill-item img{
+    width: 7vw;
+}
+.skill-item img:hover{
+    box-shadow: 0 0 5px rgb(251, 249, 249);
+    border-radius: 15px;
+    height: 15vh;
+    scale: 1.1;
+    transition: .3s ease-in-out ;
+}
 
+/* skill item popping on hover the whole skill */
 /* skilss item animation start */
-#skills:hover #skill-1 {
+/* #skills:hover #skill-1 {
     opacity: 1;
 }
 
@@ -469,9 +483,9 @@ header p{
     opacity: 0;
     animation: s6 4.5s ease-in forwards;
     transform: translateX(-28vw);
-}
+} */
 
-@keyframes s2 {
+/* @keyframes s2 {
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -525,8 +539,8 @@ header p{
     70% {
         opacity: 0;
     }
-}
-
+} */
+/* since more of the items are added we have to add more animation for those */
 /* skill item animations end */
 .skill-item a {
     color: red;
@@ -539,12 +553,12 @@ header p{
 
 }
 
-.skill-item:hover {
+/* .skill-item:hover {
     scale: 1.1;
     transition-timing-function: ease-in-out;
     transition-duration: .25s;
     font-weight: bolder;
-}
+} */
 
 #sh {
     text-align: center;
@@ -565,12 +579,12 @@ header p{
 
     50% {
         background-position: 100% 50%;
-        height: 5vh;
+        /* height: 5vh; */
     }
 
     100% {
         background-position: 0% 50%;
-        height: 10vh;
+        /* height: 10vh; */
     }
 }
 
@@ -752,14 +766,19 @@ footer img:hover{
         width: auto
     }
     #skills {
-        grid-template-columns: auto;
+        grid-template-columns: auto auto auto;
         animation: none;
     }
     #sh{
         animation: none;
     }
     .skill-item {
-        width: 70vw;
+        width: 25vw;
+        margin: auto;
+
+    }
+    .skill-item img{
+        width: 20vw;
         margin: auto;
 
     }
@@ -796,7 +815,7 @@ footer img:hover{
     }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     #intro {
         height: 45vh;
     }
@@ -870,4 +889,4 @@ footer img:hover{
     #hobby {
         width: auto;
     }
-}
+} */
